@@ -1,0 +1,44 @@
+.header {
+  background-color: var(--color-white);
+  box-shadow: $drop-shadow--1, $drop-shadow--2, $drop-shadow--3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+
+  @include respond(tablet-medium) {
+    justify-content: flex-start;
+    box-shadow: none;
+    margin-bottom: 2rem;
+  }
+
+  &__menu-icon {
+    height: 4rem;
+    position: absolute;
+    top: 1.7rem;
+    left: 1rem;
+    cursor: pointer;
+
+    @include respond(tablet-medium) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    height: 4rem;
+    @include respond(tablet-medium) {
+      margin-left: 4%;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include respond(tablet-medium) {
+      display: block;
+      margin-left: auto;
+      margin-right: 12%;
+    }
+  }
+}

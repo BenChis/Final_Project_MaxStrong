@@ -1,0 +1,29 @@
+.section-loads {
+  .loads__img-container {
+    width: 35rem;
+
+    @include respond(tablet-medium) {
+      min-width: 35rem;
+      flex-basis: 50%;
+      margin-right: 2rem;
+    }
+
+    .loads__img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .loads__text-container {
+    background-color: var(--color-tertiary--3);
+    max-width: 38rem;
+    padding: 4rem 2rem 2rem 2rem;
+    text-align: left;
+    border-radius: $border-radius-box;
+
+    @include respond(tablet-medium) {
+      flex-basis: 50%;
+    }
+  }
+}

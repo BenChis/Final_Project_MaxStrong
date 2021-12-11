@@ -1,0 +1,38 @@
+.heading {
+  font-weight: $font-weight-default;
+
+  &--primary {
+    font-size: $h1-font-size;
+    line-height: 1.1;
+
+    & strong {
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  &--secondary {
+    font-size: $h2-font-size;
+
+    &-bold {
+      font-weight: $font-weight-semibold;
+      font-size: $h2-font-size-smaller;
+    }
+  }
+
+  &-describition {
+    font-weight: $font-weight-semibold;
+    display: block;
+  }
+
+  &--tertiary {
+    font-size: $h3-font-size;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.paragraph {
+  &--big {
+    font-size: $font-size-btn;
+    font-weight: $font-weight-semibold;
+  }
+}

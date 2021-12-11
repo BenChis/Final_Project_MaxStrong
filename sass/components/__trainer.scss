@@ -1,0 +1,39 @@
+.section-trainer {
+  background: $linear-gradient-1;
+  padding-top: 6rem;
+
+  @include respond(tablet-medium) {
+    padding-top: 1rem;
+    gap: 10rem;
+  }
+
+  .trainer__text-container {
+    max-width: 35rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @include respond(tablet-medium) {
+      text-align: left;
+      order: 1;
+
+      flex-basis: 50%;
+      margin: 0;
+    }
+  }
+
+  .trainer__img-container {
+    max-width: 35rem;
+    @include respond(tablet-medium) {
+      flex-basis: 50%;
+      height: 100%;
+      max-width: 50rem;
+    }
+  }
+  .trainer__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: translateY(2rem);
+    margin-left: auto;
+  }
+}

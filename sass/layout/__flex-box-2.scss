@@ -1,0 +1,15 @@
+.flex-box-2 {
+  display: flex;
+
+  //mobile display flex column
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(tablet-medium) {
+    flex-direction: row;
+    justify-content: center;
+
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}

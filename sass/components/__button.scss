@@ -1,0 +1,55 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    height: 5.9rem;
+    width: 25rem;
+    font-size: $font-size-btn;
+    font-weight: $font-weight-semibold;
+    border-radius: $border-radius-btn;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+
+    @include respond(tablet-medium) {
+      height: 5.5rem;
+    }
+  }
+
+  &--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transition: all 0.4s;
+
+    &:hover {
+      opacity: 0.8;
+      transform: translateY(-0.5rem) scale(1.05);
+      box-shadow: $drop-shadow-hover--1;
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(-0.25rem) scale(1.025);
+      box-shadow: $drop-shadow-hover--2;
+    }
+  }
+
+  &--secondary {
+    background-color: var(--color-white);
+    color: var(--color-btn-sec);
+    font-weight: $font-weight-default;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: var(--color-tertiary--3);
+      transform: translateY(-0.5rem) scale(1.05);
+      box-shadow: $drop-shadow-hover--1;
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(-0.25rem) scale(1.025);
+      box-shadow: $drop-shadow-hover--2;
+    }
+  }
+}

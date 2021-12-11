@@ -1,0 +1,27 @@
+.section-onboarding {
+  .onboarding__img-container {
+    width: 35rem;
+    @include respond(tablet-medium) {
+      order: 1;
+      flex-basis: 45%;
+    }
+  }
+  .onboarding__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .onboarding__text-container {
+    max-width: 34rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @include respond(tablet-medium) {
+      max-width: none;
+      flex-basis: 45%;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}

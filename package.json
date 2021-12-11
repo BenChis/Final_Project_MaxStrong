@@ -1,0 +1,24 @@
+{
+  "name": "super_strong",
+  "version": "1.0.0",
+  "description": "final project for freemote bootchamp",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./html/index.html",
+    "build": "parcel build ./html/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenChis/Final_Project_MaxStrong.git"
+  },
+  "author": "Benjamin Scharf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenChis/Final_Project_MaxStrong/issues"
+  },
+  "homepage": "https://github.com/BenChis/Final_Project_MaxStrong#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.44.0"
+  }
+}
