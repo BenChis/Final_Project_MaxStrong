@@ -41,7 +41,7 @@
 
   @include respond(tablet-medium) {
     flex-direction: row;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: center;
     align-items: center;
   }
